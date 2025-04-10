@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Snake Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Colorful Snake Game</h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <p>Score: <span id="score">0</span></p>
+        <p id="message"></p>
+    </div>
+    <script src="{{ url_for('static', filename='snake.js') }}"></script>
+</body>
+</html>
